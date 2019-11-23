@@ -1,0 +1,14 @@
+/* TEAM */
+	Developer: Jakub Jirůtka
+	Twitter: @JakubJirutka
+
+	Developer: Filip Krivčík
+
+	Developer: Lenka Nikodýmová
+
+	Developer: Adéla Rudá
+
+	Developer: Vojtěch Šanda
+
+/* THANKS */
+	Webové stránky vznikly v rámci Hackathonu Přístupný web v Socialbakers.
