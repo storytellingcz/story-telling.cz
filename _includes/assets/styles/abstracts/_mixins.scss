@@ -1,0 +1,14 @@
+@mixin bottomBlock {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background: fade-out($color__primary, .45);
+        box-shadow: 0 15px 45px fade-out(#FBD6BA, 0.4);
+        z-index: -1;
+        transform: translate(12%, 13px);
+    }
+}

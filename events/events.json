@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/event.njk",
+  "permalink": "events/{{ date | machineDate }}-{{ title | slug }}/index.html",
+  "tags": "event"
+}

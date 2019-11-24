@@ -1,0 +1,66 @@
+.footer {
+    background: $color__secondary;
+    padding: 65px 45px;
+    font-size: 13px;
+    
+    
+    &__columns {
+        display: flex;
+
+        flex-direction: column;
+    }
+    &__column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+    }
+    &__heading {
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+    &__link {
+        margin: 13px 0;
+        text-decoration: none;
+        color: $color__subtext;
+    }
+    &__newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__newsletter-input {
+        font-family: inherit;
+        border: none;
+        padding: 15px;
+    }
+    &__button {
+        align-self: center;
+        background: $color__primary--darken;
+        border: none;
+        font-family: inherit;
+        padding: 10px 40px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__made-love {
+        padding: 45px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        height: 20px;
+        margin: 0 8px;
+    }
+    &__heart {
+        height: 15px;
+        margin-left: 5px;
+    }
+}

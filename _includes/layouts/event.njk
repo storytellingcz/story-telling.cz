@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+section: event
+---
+
+<article>
+    <h1>{{ title }}</h1>
+    <dl>
+        <dt>Kdy</dt>
+        <dd>
+            <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+        </dd>
+        <dt>Kde</dt>
+        <dd>{{ venue }}</dd>
+    </dl>
+    <p>{{ layoutContent | safe }}</p>
+</article>
+
+<nav>
+  <a href="{{ '/events/' | url }}">← Akce</a>
+</nav>

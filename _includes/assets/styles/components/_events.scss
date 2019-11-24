@@ -1,0 +1,28 @@
+.events {
+    padding: 30px 0;
+
+    &__more {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 90%;
+        background: red;
+        padding: 15px 0;
+        margin: 30px auto;
+    }
+    &__heading {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 8px);
+            background: url('../imgs/icons/headline-underline-1.svg');
+            background-size: cover;
+            width: 70px;
+            height: 20px;
+        }
+    }
+}

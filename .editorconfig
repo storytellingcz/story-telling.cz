@@ -12,3 +12,6 @@ trim_trailing_whitespace = true
 [humans.txt]
 indent_size = 4
 indent_style = tab
+
+[*.{html,njk}]
+indent_size = 4
