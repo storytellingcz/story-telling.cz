@@ -3,10 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or renderData.title or metadata.title }}</title>
     <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% set css %}
-        {% include "assets/css/inline.css" %}
-    {% endset %}
-    <style>{{ css | cssmin | safe }}</style>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:500i,600i&amp;display=swap" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
     {% set js %}
         {% include "assets/js/inline.js" %}
     {% endset %}

@@ -6,13 +6,15 @@
     <body>
 
         <header>
-            <em>
-                <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-            </em>
+            <h1>
+                <a href="{{ '/' | url }}">
+                    <img src="img/logo.svg" alt="{{ metadata.title }}">
+                </a>
+            </h1>
             {% include "components/nav.njk" %}
         </header>
 
-        <main>
+        <main class="main content">
             {{ layoutContent | safe }}
         </main>
 

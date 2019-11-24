@@ -1,9 +1,52 @@
-<nav>
-    <ul>
-    {%- for nav in collections.nav | sort(attribute="date") -%}
-        <li>
-            <a href="{{ nav.url | url }}"{% if nav.url == page.url %} data-current="current item"{% endif %}>{{ nav.data.navtitle }}</a>
-        </li>
-    {%- endfor -%}
-    </ul>
+<nav id="menu">
+<div id="hamburger-menu-icon">
+    <label for="h-menu-label">Menu</label>
+    <input type="checkbox" id="h_menu">
+<div class="menu-line">
+<div class="long"></div>
+<div class="long"></div>
+<div class="short"></div>
+</div>
+<div class="menu_c">
+<ol>
+    <li>
+    <a href="#">Hlavní stránka</a>
+    <ol class="under"><li><a href="#">Pozvánka na nejbližší akce</a></li>
+        <li><a href="#">O storytellingu</a></li>
+    </ol>
+    </li>
+    <li>
+    <a href="#">Vyprávíme</a>
+    <ol class="under">
+        <li><a href="#">Inscenace</a></li>
+        <li><a href="#">Vypravěči</a></li>
+        </ol>
+    </li>
+    <li>
+    <a href="#">Učíme vyprávět</a>
+    <ol class="under">
+        <li><a href="#">Workshopy</a></li>
+        <li><a href="#">Kurzy</a></li>
+    </ol>
+    </li>
+    <li>
+    <a href="#">Akce</a>
+    <ol class="under">
+        <li><a href="#">Bude</a></li>
+        <li><a href="#">Bylo</a></li>
+    </ol>
+    </li>
+    <li>
+    <a href="#">O nás</a>
+    <ol class="under">
+        <li><a href="#">O spolku</a></li>
+        <li><a href="#">Spolupracujeme</a></li>
+    </ol>
+    </li>
+    <li>
+    <a href="#">Kontakty</a>
+    </li>
+</ol>
+</div>
+</div>
 </nav>

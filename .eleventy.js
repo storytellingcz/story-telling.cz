@@ -1,10 +1,10 @@
 const { DateTime } = require('luxon')
-const CleanCSS = require('clean-css')
+const Sass = require('node-sass')
 const UglifyJS = require('uglify-es')
 const htmlmin = require('html-minifier')
 
 module.exports = function (config) {
-  config.addLayoutAlias('post', 'layouts/post.njk')
+  config.addLayoutAlias('event', 'layouts/event.njk')
 
   // Date formatting (human readable)
   config.addFilter('readableDate', (dateObj) => {
@@ -16,9 +16,9 @@ module.exports = function (config) {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
   })
 
-  // Minify CSS
-  config.addFilter('cssmin', (code) => {
-    return new CleanCSS({}).minify(code).styles
+  // Convert Sass to CSS
+  config.addFilter('sass', (data) => {
+    return Sass.renderSync({ data })
   })
 
   // Minify JS
@@ -52,7 +52,7 @@ module.exports = function (config) {
 
   // Don't process folders with static assets e.g. images
   config.addPassthroughCopy('favicon.ico')
-  config.addPassthroughCopy('static/img')
+  config.addPassthroughCopy('imgs')
   config.addPassthroughCopy('admin')
   config.addPassthroughCopy('_includes/assets/')
 

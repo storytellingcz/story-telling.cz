@@ -2,5 +2,59 @@
 layout: layouts/base.njk
 section: home
 ---
-
-{{ layoutContent | safe }}
+<section class="section hero">
+    <div class="hero__img-box">
+            <img src="./imgs/hero.png" alt="Ukázka z akce" class="hero__img">
+            <button class="hero__play">
+                <img src="./imgs/icons/play.svg" alt="Přehrát" class="hero__play-icon">
+            </button>
+    </div>
+    <p class="hero__moto">Vyprávíme a učíme<br>vyprávět</p>
+</section>
+<section class="section events">
+    <h1 class="heading-1 events__heading">Akce</h1>
+    <div class="event">
+        <img src="./imgs/event-placeholder-1.png" alt="Něco co se děje na prvním eventu" class="event__img">
+        <h2 class="heading-2 event__heading">Vyprávění u ohně</h2>
+        <span class="event__date">28.11.2019</span>
+        <p class="event__place">Galeryje 9, Lidická ulice, Brno</p>
+        <p class="event__description">Ve čtvrtek se ve 20:00 opět setkáme u ohně pod kaštanem, kde nám Pírko na přání povypráví rozličné kratší příběhy ze svého repertoáru, který je všechno, jen ne nudný a vážný. Těšit se můžete také na tradiční opékání buřtů. </p>
+        <a href="#" class="btn event__more">Zjistit Více</a>
+    </div>
+    <div class="event">
+        <img src="./imgs/event-placeholder-1.png" alt="Něco co se děje na prvním eventu" class="event__img">
+        <h2 class="heading-2 event__heading">Kufr plný pohádek</h2>
+        <span class="event__date">01.12.2019</span>
+        <p class="event__place">Kavárna klubu Cross, Plynární 23, Praha 7</p>
+        <p class="event__description">V neděli nás od 14:30 čeká pravidelné vyprávění pro děti. Tentokrát se Vydáte na pouť s příběhy z celého světa, poznáte jaké pohádky se vypráví v Asii, Africe a dalších koutech naší planety. Průvodkyní vám bude zkušená vypravěčka a milovnice pohádek Eva Burešová. </p>
+        <a href="#" class="btn event__more">Zjistit Více</a>
+    </div>
+    <div class="event">
+        <img src="./imgs/event-placeholder-1.png" alt="Něco co se děje na prvním eventu" class="event__img">
+        <h2 class="heading-2 event__heading">Vyprávění ve věži</h2>
+        <span class="event__date">04.12.2019</span>
+        <p class="event__place">Vodárenská věž, Na výšinách 1, Praha 7</p>
+        <p class="event__description">Srdečně vás zveme na středeční vyprávění z dílny Justina Svobody, které je spojené s prohlídkou Letenské vodárenské věže. Justin nám bude vyprávět příběhy spojené s tímto magickým místem. Akce začíná v 19:30. </p>
+        <a href="#" class="btn event__more">Zjistit Více</a>
+    </div>
+    <div class="event">
+        <img src="./imgs/event-placeholder-1.png" alt="Něco co se děje na prvním eventu" class="event__img">
+        <h2 class="heading-2 event__heading">Vyprávění v divadle</h2>
+        <span class="event__date">12.12.2019</span>
+        <p class="event__place">Dejvická Divadelní kavárna, Zelená , Praha 6</p>
+        <p class="event__description">Po roce vás opět zveme na storytellingový večer spolu s herci Dejvického divadla přímo v prostorách Dejvické Divadelní Kavárny. Naši vypravěči vám spolu s herci budou vyprávět příběhy z uměleckého prostředí. Těšíme se na vás od 18 hodin.</p>
+        <a href="#" class="btn event__more">Zjistit Více</a>
+    </div>
+    <a href="#" class="btn events__more">Zobrazit více akcí</a>
+</section>
+<section class="section what clearfix">
+    <div class="what__img-box">
+        <img src="./imgs/what-is-it-placeholder.png" alt="Vyprávějící" class="what__img">
+    </div>
+    <h1 class="what__heading heading-1">Příběh Storytellingu</h1>
+    <p class="what__txt">Storytelling znamená vyprávění příběhů. Je to návrat a znovu objevování hluboce zakořeněné tradice vyprávění. Je to ta nejpřirozenější lidská činnost i umění zároveň. </br>
+        Naše skutečnost se totiž neskládá z událostí, ale z příběhů. Vyprávění i naslouchání příběhům jsou nedílnou součástí našich životů. Vždyť naše životy samy jsou jedním velkým příběhem. </br>
+        Věříme, že vyprávěním příběhů se můžeme přiblížit sami k sobě i k sobě navzájem. Příběhy mohou být prostředkem naší seberealizace, způsobem, jak trávit volný čas, ale také jak se dozvědět něco o nás samých a rozvíjet se. Skrze příběhy se můžeme lépe učit. Dostáváme prostor pro rozvíjení naší kreativity a fantazie. </br>
+        V současné době je storytelling uměleckou formou vyjádření, svébytnou divadelní disciplínou. V některých zemích, například v Norsku, je storytelling silně zakořeněn do společenského a kulturního života. Jako umělecká a edukační disciplína je významným prvkem ve vzdělávacím systému. U nás se o šíření povědomí o této formě vypravěčského umění stará právě náš spolek.</br>
+        Nabízíme vám vypravěčské setkání a inscenace. Naučíme vás vyprávět v rámci našich workshopů a kurzů. Vyprávění je totiž pro každého. </p>
+</section>

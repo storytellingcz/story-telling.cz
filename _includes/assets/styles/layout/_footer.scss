@@ -1,0 +1,108 @@
+.footer {
+    background: $color__secondary;
+    padding: 65px 45px;
+    font-size: 13px;
+    
+    
+    &__columns {
+        display: flex;
+
+        flex-direction: column;
+
+        @include responsive(1024px) {
+            flex-direction: row;
+        }
+    }
+    &__column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+        
+        @include responsive(1024px) {
+            text-align: left;
+            &:last-child {
+                text-align: left;
+                margin-left: auto;
+            }
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
+        }
+    }
+    @include responsive(1024px) {
+        &:last-child {
+            text-align: left;
+        }
+    }
+    &__heading {
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        font-weight: 600;
+
+        @include responsive(720px) {
+            font-size: 20px;
+        }
+    }
+    &__link {
+        margin: 13px 0;
+        text-decoration: none;
+        color: $color__subtext;
+    }
+    &__newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__newsletter-input {
+        font-family: inherit;
+        border: none;
+        padding: 15px;
+        width: 90%;
+        margin: auto;
+        max-width: 320px;
+
+        @include responsive(1024px) {
+            margin: 0;
+            width: 600px;
+        }
+    }
+    &__button {
+        align-self: center;
+        background: $color__primary--darken;
+        border: none;
+        font-family: inherit;
+        padding: 10px 40px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
+
+        @include responsive(720px) {
+            font-size: 16px;
+        }
+        @include responsive(1024px) {
+            align-self: flex-start;
+        }
+    }
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__made-love {
+        padding: 45px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        height: 20px;
+        margin: 0 8px;
+    }
+    &__heart {
+        height: 15px;
+        margin-left: 5px;
+    }
+}
