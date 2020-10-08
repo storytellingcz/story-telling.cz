@@ -1,3 +1,3 @@
 # Storytelling CZ
 
-TODO
+Finished page is in the `/static/` directory
