@@ -1,0 +1,179 @@
+.hero {
+    margin-bottom: 100px;
+
+    @include responsive(1024px) {
+        display: flex;
+    }
+    &__container {
+        display: flex;
+
+        @include responsive(764px) {
+            justify-content: center;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__img-box {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: fade-out(#000000, 0.45);
+            z-index: 1;
+        }
+        @include bottomBlock;
+
+        @include responsive(764px) {
+            margin: 0;
+        }
+        @include responsive(1024px) {
+            width: 480px;
+            max-width: 100%;
+        }
+        @include responsive(1500px) {
+            width: 656px;
+        }
+    }
+    &__moto {
+        text-align: center;
+        font-weight: bold;
+        line-height: 1;
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 500;
+
+        @include responsive(500px) {
+            font-size: 50px;
+            margin-bottom: 35px;
+        }
+        @include responsive(764px) {
+            font-size: 60px;
+            line-height: 1.15;
+            margin-bottom: 50px;
+        }
+        @include responsive(1024px) {
+            position: relative;
+            margin-left: 50px;
+            margin-top: 0;
+            padding-top: 20px;
+            text-align: left;
+            font-size: 60px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 190px;
+                height: 2px;
+                background: black;
+            }
+        }
+        @include responsive(1500px) {
+            font-size: 70px;
+        }
+        &--small {
+            display: block;
+            
+            @include responsive(1024px) {
+                display: none;
+            }
+        }
+        &--wide {
+            display: none;
+            
+            @include responsive(1024px) {
+                display: block;
+            }
+        }
+    }
+    &__content {
+        position: relative;
+        
+        @include responsive(764px) {
+            width: 300px;
+        }
+        @include responsive(1024px) {
+            width: 480px;
+        }
+        @include responsive(1500px) {
+            width: 550px;
+        }
+    }
+    &__small-img {
+        display: none;
+        position: absolute;
+        
+        @include responsive(764px) {
+            &--first {
+                display: block;
+                width: 265px;
+                bottom: 0;
+                left: 20px;
+                box-shadow: 15px -15px 0 #FBD6BA;
+            }
+        }
+        @include responsive(1024px) {
+            display: block;
+            bottom: 0;
+            left: 15px;
+            width: 228px;
+
+            &--first {
+                box-shadow: none;
+                padding-right: 0;
+            }
+            &--second {
+                bottom: 70px;
+                left: 30px;
+                transform: translateX(100%);
+            }
+            &--highlighted {
+                box-shadow: 20px -20px 0 $color__primary;
+            }
+        }
+        @include responsive(1500px) {
+            width: 390px;
+
+            &--second {
+                bottom: 100px;
+            }
+        }
+    }
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80px;
+        width: 80px;
+        border: none;
+        background: transparent;
+        z-index: 2;
+        object-fit: cover;
+        cursor: pointer;
+
+        @include responsive(1024px) {
+            height: 80px;
+            width: 80px;
+        }
+        @include responsive(1500px) {
+            height: 90px;
+            width: 90px;
+        }
+    }
+    &__play-icon {
+        width: 100%;
+        height: 100%;
+    }
+}

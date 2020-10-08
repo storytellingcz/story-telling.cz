@@ -1,0 +1,74 @@
+.events {
+    padding: 30px 0;
+    position: relative;
+    margin-bottom: 80px;
+
+    @include responsive(1024px) {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    &__more {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 260px;
+        background: $color__secondary;
+        color: inherit;
+        padding: 15px 0;
+        margin: 50px auto 0 auto;
+        font-size: 16px;
+        font-weight: 600;
+
+        @include responsive(764px) {
+            font-size: 16px;
+        }
+        @include responsive(1024px) {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            background: transparent;
+            width: max-content;
+            padding-bottom: 5px;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .15s;
+            
+        }
+    }
+    &__heading {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            background: url('../imgs/icons/headline-underline-1.svg');
+            background-size: cover;
+            width: 70px;
+            height: 20px;
+
+            @include responsive(764px) {
+                width: 120px;
+                height: 30px;
+                transform: translate(-50%, 13px);
+            }
+        }
+        @include responsive(1024px) {
+            margin-top: 150px;
+            margin-bottom: 80px;
+        }
+        @include responsive(764px) {
+            font-size: 80px;
+        }
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

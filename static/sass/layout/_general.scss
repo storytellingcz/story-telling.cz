@@ -1,0 +1,27 @@
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include responsive(1500px) {
+        max-width: 1500px;
+
+        &--short {
+            max-width: 1100px;
+        }
+    }
+}
+.main {
+    padding: 80px 0 50px 0;
+
+    @include responsive(764px) {
+        padding: 80px 0 50px 0;
+    }
+    @include responsive(1024px) {
+        padding: 110px 0 140px 0;
+    }
+    @include responsive(1500px) {
+        padding: 145px 0 140px 0;
+    }
+}

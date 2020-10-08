@@ -1,0 +1,51 @@
+.nav {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 10px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+
+    @include responsive(764px) {
+        position: absolute;
+        box-shadow: none;
+        padding: 15px 20px;
+    }
+    @include responsive(1024px) {
+        font-size: 18px;
+        padding: 30px 40px;
+    }
+    @include responsive(1500px) {
+        font-size: 22px;
+        padding: 40px 50px;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__logo {
+        height: 50px;
+
+        @include responsive(1500px) {
+            height: 65px;
+        }
+    }
+    &__logo-link {
+        display: inline-block;
+        height: 100%;
+    }
+    &__logo-img {
+        height: 100%;
+    }
+    &__menu {
+        flex-basis: 100%;
+
+        @include responsive(764px) {
+            flex-basis: auto;
+        }
+    }
+}

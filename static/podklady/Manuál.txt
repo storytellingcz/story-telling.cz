@@ -1,0 +1,50 @@
+Barvy
+-------------
+Primární - #FBD6BA
+Sekundární - #E1EEF6
+Podtext - #7E7E7E
+Footer tlačítko - #C5DDEC
+
+Stíny
+-------------
+Primární stín - 0 15px 45px rgba(#FBD6BA, 0.4)
+Sekundární stín - 0 15px 45px rgba(#E1EEF6, 0.6)
+
+Mobilní verze
+-------------
+Slogan - 16px Medium
+Nadpis sekcí (Akce, Co to je?) - 50px
+Nadpis akce - 30px
+Datum - 16px Medium
+Místo (Bohusla..) - 13px Medium
+Poddtexty - 13px Medium
+Zjistit více - 13px SemiBold
+Zobrazit více akcí - 16px SemiBold
+Footer nadpis - 16px SemiBold 
+Footer tlačítko - 16px SemiBold
+
+Tablet
+-------------
+Slogan - 25px Medium
+Nadpis sekcí (Akce, Co to je?) - 80px
+Nadpis akce - 50px
+Datum - 20px Medium
+Místo (Bohusla..) - 20px Medium
+Poddtexty - 16px Medium
+Zjistit více - 20px SemiBold
+Zobrazit více akcí - 16px Semibold
+Footer nadpis - 20px SemiBold 
+Footer tlačítko - 16px SemiBold
+
+Počítač
+-------------
+Slogan - 30px Medium
+Nadpis sekcí (Akce, Co to je?) - 100px
+Nadpis akce - 50px
+Datum - 16px Medium
+Místo (Bohusla..) - 16px Medium
+Poddtexty - 16px Medium
+Zjistit více - 20px SemiBold
+Zobrazit více akcí - 20px Semibold
+Footer nadpis - 25px SemiBold 
+Footer tlačítko, footer Made with love - 20px SemiBold

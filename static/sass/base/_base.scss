@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font__normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: $color__primary;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color__primary, 5%);
+}
